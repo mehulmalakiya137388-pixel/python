@@ -1,0 +1,8 @@
+file = open("sample.txt", "r")
+content = file.read()
+print("File Contents:")
+print(content)
+words = content.split()
+count = len(words)
+print("Number of words in the file:", count)
+file.close()
