@@ -13,7 +13,6 @@ class Solution:
         tail = None
 
         while curr:
-            # Step 1: Check if there are at least k nodes
             temp = curr
             count = 0
             while temp and count < k:
@@ -25,7 +24,7 @@ class Solution:
                     tail.next = curr
                 break
 
-            # Step 2: Reverse k nodes
+          
             group_head = curr
             prev = None
             next_node = None
@@ -38,7 +37,7 @@ class Solution:
                 curr = next_node
                 count += 1
 
-            # Step 3: Connect reversed group
+          
             if not new_head:
                 new_head = prev
             if tail:
